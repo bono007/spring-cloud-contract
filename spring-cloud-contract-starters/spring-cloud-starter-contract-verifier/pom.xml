@@ -48,7 +48,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.toomuchcoding.jsonassert</groupId>
-			<artifactId>jsonassert</artifactId>
+			<artifactId>jsonassert-shade</artifactId>
 			<exclusions>
 				<exclusion>
 					<groupId>org.ow2.asm</groupId>

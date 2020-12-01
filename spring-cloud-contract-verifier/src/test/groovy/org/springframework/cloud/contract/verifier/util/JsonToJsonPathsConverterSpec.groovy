@@ -25,7 +25,7 @@ import com.jayway.jsonpath.Option
 import com.toomuchcoding.jsonassert.JsonAssertion
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
-import net.minidev.json.JSONArray
+import shaded.net.minidev.json.JSONArray
 import spock.lang.Specification
 import spock.util.environment.RestoreSystemProperties
 

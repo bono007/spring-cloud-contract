@@ -62,8 +62,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.toomuchcoding.jsonassert</groupId>
-			<artifactId>jsonassert</artifactId>
-			<version>0.5.0</version>
+			<artifactId>jsonassert-shade</artifactId>
+			<version>0.5.1-SNAPSHOT</version>
 			<scope>test</scope>
 			<exclusions>
 				<exclusion>

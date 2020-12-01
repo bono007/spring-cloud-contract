@@ -20,15 +20,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import net.minidev.json.JSONObject;
-import net.minidev.json.parser.JSONParser;
-import net.minidev.json.parser.ParseException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.common.header.Header;
 import org.apache.kafka.common.header.Headers;
+import shaded.net.minidev.json.JSONObject;
+import shaded.net.minidev.json.parser.JSONParser;
+import shaded.net.minidev.json.parser.ParseException;
 
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.cloud.contract.verifier.converter.YamlContract;
@@ -94,9 +94,9 @@ class KafkaStubMessages implements MessageVerifier<Message<?>> {
 
 class Receiver {
 
-	private final Map<String, Consumer> consumers;
-
 	private static final Log log = LogFactory.getLog(Receiver.class);
+
+	private final Map<String, Consumer> consumers;
 
 	Receiver(Map<String, Consumer> consumers) {
 		this.consumers = consumers;
